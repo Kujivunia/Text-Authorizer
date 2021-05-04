@@ -22,7 +22,7 @@ namespace TextAuthorizerNC
 
         public void EnqueueStep(IAlgorithmStep step)
         {
-            throw new NotImplementedException();
+            this.queue.Enqueue(step);
         }
 
         public void Execute(IAlgorithmData data)
@@ -35,7 +35,7 @@ namespace TextAuthorizerNC
 
         public int GetCount()
         {
-            throw new NotImplementedException();
+            return this.queue.Count();
         }
 
     }
