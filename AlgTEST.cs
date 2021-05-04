@@ -27,8 +27,18 @@ namespace TextAuthorizerNC
             Console.Write("Dictionary: ");
             foreach (var item in dt.tokens)
             {
-                Console.Write("|"+item+" "+dt.ngram[item].ToString().Substring(0,5)+"|");
+                if (dt.ngram[item].ToString().Length>6)
+                {
+                    Console.Write("|" + item + " " + dt.ngram[item].ToString().Substring(0, 6));
+                }
+                else
+                {
+                    Console.Write("|" + item + " " + dt.ngram[item].ToString());
+                }
+                
             }
+            Console.WriteLine();
+            Console.Write("Dictionary size: " + dt.ngram.Count());
             Console.WriteLine();
         }
     }

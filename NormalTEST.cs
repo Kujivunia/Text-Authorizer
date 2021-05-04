@@ -15,6 +15,7 @@ namespace TextAuthorizerNC
             dt.normalized = dt.data.ToLower();
             dt.normalized = dt.normalized.Replace(" ","");
             dt.normalized = dt.normalized.Replace(".","");
+            dt.normalized = dt.normalized.Replace(",", "");
             Console.WriteLine("Normalized: "+dt.normalized);
         }
     }
