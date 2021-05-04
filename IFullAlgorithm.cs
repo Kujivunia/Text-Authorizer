@@ -8,7 +8,10 @@ namespace TextAuthorizerNC
 {
     interface IFullAlgorithm: IAlgorithmStep
     {
-        void AddStep(IAlgorithmStep step);
-        void RemoveStepAt(int i);
+        void EnqueueStep(IAlgorithmStep step);
+        void DequeueStep();
+        int GetCount();
+        void DoStep(IAlgorithmData data);
+
     }
 }

@@ -8,6 +8,6 @@ namespace TextAuthorizerNC
 {
     interface INormalization:IAlgorithmStep
     {
-
+    
     }
 }
