@@ -50,6 +50,12 @@ namespace TextAuthorizerNC
                 }
             }
 
+            foreach (var item in dt.NGramFrequencyDistribution.ToList<System.Collections.Generic.KeyValuePair<string, double>>().OrderBy(v => v.Value).Reverse())
+            {
+                Console.WriteLine(item);
+            }
+            // Перевожу словарь нграмм в список "нграмма-чистота"
+            //System.Collections.Generic.List<>;
 
         }
     }
