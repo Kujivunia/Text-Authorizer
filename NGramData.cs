@@ -16,7 +16,8 @@ namespace TextAuthorizerNC
 
         public Dictionary<string, string> Settings = new Dictionary<string, string>();
         //По ключу "Current ABC" требуется хранить ключ текущего алфавита. 
-        //Trigram at least если триграма встречена меньше раз, то игнорируется. 
+        //Trigram at least если триграма встречена меньше раз, то игнорируется.
+        
 
         public Dictionary<string, double> NGramFrequencyDistribution = new Dictionary<string, double>(); //или distribution function density... 
     }

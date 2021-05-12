@@ -33,6 +33,17 @@ namespace TextAuthorizerNC
             }
         }
 
+        public void ExecuteWithoutRemoves(IAlgorithmData data)
+        {
+            for (int i = 0; i < this.queue.Count; i++)
+            {
+                //this.queue.Peek().Execute(data);
+                this.queue.ElementAt(i).Execute(data);
+            }
+                
+            
+        }
+
         public int GetCount()
         {
             return this.queue.Count();
